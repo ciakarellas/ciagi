@@ -2,12 +2,16 @@ var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na 
 
 var animal = 'zielone słonie';
 
-String.prototype.capitalizeFirstLetter = function() {
+/*String.prototype.capitalizeFirstLetter = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
-};
+};*/
+
+var capitalizeFirstLetter = function(word){
+	return word.charAt(0).toUpperCase() + word.slice();
+}
 
 
-var animalCapFirstLetter = animal.capitalizeFirstLetter();
+var animalCapFirstLetter = capitalizeFirstLetter(animal);
 
 console.log(animalCapFirstLetter);
 
